@@ -1,0 +1,20 @@
+@charset "UTF-8";
+section#conteudo{
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-spec{
+   width: 480px; 
+    height: 380px;
+    border: none; /*remova a barda*/
+    overflow: hidden;/*evita que a rolagem aconteça- ou era pra esconder, entao foi usado o scrolline="no"*/       
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 2px solid rgb(141, 140, 140, 0.9) ;
+    margin: 15px;
+    text-align: center;
+  }
+  

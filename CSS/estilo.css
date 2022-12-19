@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+@font-face {
+  font-family: 'FontLogo';
+  src: url("../curso-html5-pacote01/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf");
+}
+/*Aqui eu criei um estilo e chamo este estilo no arquivo html atraves da tag ''link*/
+body{
+  background-color: rgb(218, 218, 211);
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+hgroup#group{
+  text-align: left
+}
+hgroup#group h3{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(170, 165, 165);
+  font-size: 26px;
+}
+.direita{
+  color: rgb(175, 172, 172);
+  text-align: right;
+}
+.tecnologia{ /*configuração do titulo tecnologia e inovaçoes*/
+  color: rgb(156, 154, 154);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{ 
+  text-indent: 50px; 
+  text-align: justify;   
+}
+/*Formatação da foto do oculos no cabeçalho*/
+ header#cabecalho img#icone{
+  position: absolute;
+  left: 1100px;
+  top: 70px;
+}
+h2#separador {
+  border-bottom: 2px rgba(141, 140, 140, 0.9) solid; 
+  height: 150px;
+  background: url("../curso-html5-pacote01/projeto-glass-html5/_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /*Imagem de basckground*/
+  
+}
+
+header#cabecalho h1{
+  font-family: 'FontLogo', sans-serif;
+  font-size: 30pt;
+  color: rgb(105, 105, 102);
+  text-shadow: 1px 1px 9px rgba(27, 27, 27, 0.9);
+ padding: 0px;
+ margin-bottom: 0px ;
+}
+
+header#cabecalho h2{
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 25pt;  
+  color: rgb(187, 182, 182);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  padding: 0px;
+  margin-top: 0px;
+}
+
+
+/*Formataçao de imagem com legenda*/
+/*Quando crio uma classe eu referencio com a tag seguido de ponto*/
+figure.foto-legenda{
+  border:8px rgb(255, 255, 255) solid;
+  box-shadow: 1px 1px 15px black;
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+figure.foto-legenda img{
+  width: 100%;
+  height: 100%;
+}
+
+figure.foto-legenda figcaption{
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 1s;
+  
+}
+figure.foto-legenda:hover figcaption{
+  opacity: 1;
+}
+nav#Menu ul{ /* a cerquilha faz link com a tag 'nav' e a identificação 'MENu' e faz formatação somente onde há 'ul' */
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute; /*posiçao absoluta ele fica sob em cima dos outros arquivos*/
+ top: 0px;
+ left: 600px;
+}
+nav#Menu li{
+  display: inline-block;
+  background-color: rgb(59, 59, 59);
+  padding: 10px;
+}
+nav#Menu h1{ /*Formatação para todo 'h1' que esta dentro da tag 'nav'*/
+  display: none;
+}
+nav#Menu li:hover{
+  background-color: rgb(165, 161, 161);
+}
+
+nav#Menu a{
+  color: rgb(240, 235, 235);
+  text-decoration: none;
+}
+nav#Menu a:hover{/*Hover é o efeito de passar o mouse por cima*/ 
+  color: white;
+
+}
+
+/*Formatação para o conteiner div-tudo que esta dentro do conteiner 'div' é formatação relativa*/
+div#interface {
+  width: 1000px;
+  background-color: rgb(253, 253, 253);
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 20px 20px rgb(177, 174, 174);
+  padding: 40px 40px 40px 40px; /*1o pixel de margem interna na interface*/
+}
+
+section#Corpo{
+  display: block;
+  width: 540px;
+  float: left;
+  border-right: 2px solid rgb(141, 140, 140, 0.5);
+  padding-right: 20px;
+  margin-top: -28px;
+}
+
+table#tabelaspec { /*borda da tabela*/
+    border: 1px solid rgb(167, 164, 164);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(148, 144, 144);
+}
+table#tabelaspec td{
+  border: 1px solid ;
+  padding: 8px; /*espaço interno na tabela*/
+  text-align:center;
+  vertical-align: top;
+  color: white;
+}
+table#tabelaspec td.ce{
+  color: white;
+  background-color: rgb(126, 123, 123);
+}
+table#tabelaspec td.cd{
+color: white;
+background-color: rgb(173, 168, 168);
+}
+
+table#tabelaspec caption{
+  color: rgb(212, 209, 209);
+  font-size: 13pt;
+  font-weight: bold;
+}
+table#tabelaspec caption span{
+display: block;
+float: right;
+color: black;
+margin-top: 10px;
+font-size: 8px;
+}
+
+aside#Lateral{
+  display: block;
+  width: 400px;
+  float: right;
+  margin-top: -28px;
+  background-color: rgb(219, 211, 211);
+  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: 2px;
+}
+aside#Lateral h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20pt;
+  color: rgb(133, 129, 129);
+  background-color: rgb(109, 107, 107);
+}
+aside#Lateral h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  color: rgb(189, 183, 183);
+}
+
+footer#rodape{
+  clear: both;
+  border-top: 2px solid rgb(141, 140, 140, 0.9) ;
+  margin: 1px;
+  text-align: center;
+}
+
+article#noticiaprincipal h2{
+  font-size: 12pt;
+  color: rgb(82, 80, 80);
+  background-color: rgb(156, 151, 151);
+  padding: 8px 0px 8px 20px;
+  margin-left: 0px;
+}

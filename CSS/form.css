@@ -1,0 +1,39 @@
+@charset "UTF-8";
+form{
+    width: 590px;
+    margin: auto;
+}
+
+input{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+}
+input:hover{
+    background-color: rgb(206, 203, 203);
+}
+legend{
+    color: rgb(158, 158, 158);
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+fieldset{
+    border-color: rgb(139, 135, 135);
+    
+    margin: 20px;
+}
+fieldset#Sexo{
+    width: 150px;    
+}
+fieldset#Usuario{
+    background: url("../_imagens/icone-contato.png") no-repeat 95% 95%;
+    width: auto;
+}
+fieldset#mensagens{
+    background: url("../_imagens/icone-mensagem.png") no-repeat;
+}
+fieldset#Quero-googel-glass{
+    background: url("../_imagens/icone-pagamento.png") no-repeat;
+    
+}
